@@ -1,0 +1,116 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+:root{
+	
+	--color-one: white;
+	--color-two: black;
+	--color-three: blue;
+	
+}
+
+body{
+	background-color: var(--color-one);
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+/* content */
+.content{
+	width: 100%;
+	min-height: 100vh;
+	overflow-x: hidden;
+	text-align: center;
+}
+
+/* Profile-image */
+.profile-image{
+	padding-top: 75px;
+}
+
+.profile-image img{
+	width: 10rem;
+	border-radius: 100%;
+	transition: .5s;
+}
+
+.profile-image img:hover{
+	box-shadow: 3px 3px 20px var(--color-two);
+}
+
+/* Name */
+.name{
+	padding-top: 10px;
+}
+
+.name h1{
+	font-size: 2em;
+	color: var(--color-two);
+}
+
+.name h1 i{
+	color: var(--color-three);
+}
+
+/* tagline */
+.tagline{
+	padding-top: 5px;
+}
+
+.tagline h2{
+	font-size: 1.2em;
+}
+
+/* social-link */
+.social-link{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-top: 10px;
+}
+
+.social-link i{
+	margin: 3px;
+	font-size: 1.2em;
+	color: var(--color-three);
+	transition: .5s;
+}
+
+.social-link i:hover{
+	font-size: 1.5em;
+}
+
+/* button */
+.button{
+	display: flex;
+	flex-direction: column;
+	width: 75%;
+	margin: auto;
+	padding-top: 50px;
+}
+
+.button a{
+	width: 100%;
+	height: 50px;
+	background-color: var(--color-three);
+	margin-top: 10px;
+	line-height: 50px;
+	color: var(--color-one);
+	text-decoration: none;
+	outline: none;
+	border-radius: 5px;
+	transition: .5s;
+}
+
+.button a:hover{
+	box-shadow: 1px 1px 4px var(--color-two);
+}
+
+/* fullscreen */
+.fullscreen{
+	display: block;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+}
